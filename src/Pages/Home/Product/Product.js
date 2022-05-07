@@ -5,7 +5,7 @@ import './Product.css'
 
 const Product = ({ product }) => {
 
-    const { name, description, price, quantity, supplier, img } = product;
+    const { _id, name, description, price, quantity, supplier, img } = product;
     const navigate = useNavigate();
 
     const navigateToInventory = id => {
@@ -24,7 +24,7 @@ const Product = ({ product }) => {
                     <Card.Text>{description} </Card.Text>
                     <Card.Header>Price: {price} TK</Card.Header>
                     <div className='mt-3'>
-                        <Button variant="primary">Update Stock</Button>
+                        <Button onClick={() => navigateToInventory(_id)} variant="primary">Update Stock</Button>
                     </div>
 
                 </Card.Body>
