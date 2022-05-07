@@ -3,8 +3,8 @@ import './Testimonials.css'
 
 const Testimonials = () => {
     return (
-        <div>
-
+        <div className='container'>
+            <h2>This is testimonials Page</h2>
         </div>
     );
 };
