@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Chashi Aromatic Chinigura Rice",
+        "description": "Cultivated in Bangladesh, Chashi Chinigura rice is known for its aroma. It is white, thin, and extended in size with little bit round lower edge and pointy head.",
+        "price": "120",
+        "quantity": "50",
+        "supplier": "Pran Groups",
+        "img": "https://chaldn.com/_mpimage/chashi-aromatic-chinigura-rice-1-kg?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D97213&q=best&v=1&m=400&webp=1"
+    },
+    {
+        "name": "Fitfood Nigella Seed Black Cumin",
+        "description": "9 Impressive Health Benefits of Kalonji (Nigella Seeds). Packed With Antioxidants. May Lower Cholesterol. Could Have Cancer-Fighting Properties.",
+        "price": "200",
+        "quantity": "100",
+        "supplier": "Fit Food",
+        "img": "https://chaldn.com/_mpimage/fitfood-nigella-seed-black-cumin-kalo-jira-200-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D61320&q=low&v=1&m=400&webp=1"
+    },
+    {
+        "name": "American Garden Pizza Sauce",
+        "description": "American Garden Sauce - Classic Pizza, 397 ml, American Garden is Natural Pizza Sauce to give homemade pizzas a great flavor in a simple way.",
+        "price": "329",
+        "quantity": "30",
+        "supplier": "American Garden",
+        "img": "https://chaldn.com/_mpimage/american-garden-pizza-sauce-397-ml?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D60039&q=low&v=1&m=400&webp=1"
+    },
+    {
+        "name": "Ruchi Olive Pickle",
+        "description": "Ruchi Olive Pickle is made from raw seasonal Bangladeshi olive and with the mix of all natural ingredients. Ruchi Oliver Pickle makes any day to day dish unique.",
+        "price": "130",
+        "quantity": "300",
+        "supplier": "Ruchi",
+        "img": "https://chaldn.com/_mpimage/ruchi-olive-pickle-400-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D64369&q=low&v=1&m=400&webp=1"
+    },
+    {
+        "name": "Radhuni Turmeric (Holud) Powder",
+        "description": "Apart from having excellent antiseptic and antibacterial properties, it has the distinct flavor and fragrance of coriander for your delicious preparations.",
+        "price": "95",
+        "quantity": "200",
+        "supplier": "Square",
+        "img": "https://chaldn.com/_mpimage/radhuni-turmeric-holud-powder-200-gm?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D77285&q=low&v=1&m=400&webp=1"
+    },
+    {
+        "name": "Royal Chef Fortified Sunflower Oil",
+        "description": "Contains 20% less harmful fat. Naturally enriched with Vitamins and Anti-Oxidant which boost immunity. 3-Stage European Processing Technology ensures product superiority ",
+        "price": "1295",
+        "quantity": "50",
+        "supplier": "Royal Chef",
+        "img": "https://chaldn.com/_mpimage/royal-chef-fortified-sunflower-oil-5-ltr?src=https%3A%2F%2Feggyolk.chaldal.com%2Fapi%2FPicture%2FRaw%3FpictureId%3D92552&q=best&v=1&m=400&webp=1"
+    }
+]
