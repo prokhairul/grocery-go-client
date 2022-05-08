@@ -11,9 +11,7 @@ const SocialLogin = () => {
     const navigate = useNavigate();
     let errorElement;
 
-
     if (error) {
-
         errorElement = <div> <p className='text-danger'>Error: {error.message}</p> </div>
     }
 

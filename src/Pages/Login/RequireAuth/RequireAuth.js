@@ -1,6 +1,6 @@
 import React, { Children } from 'react';
 import { useAuthState, useSendEmailVerification } from 'react-firebase-hooks/auth';
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init'
 import SpinnerMain from '../../Shared/SpinnerMain/SpinnerMain'
@@ -11,6 +11,7 @@ const RequireAuth = ({ children }) => {
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
     const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
+    const navigate = useNavigate();
 
     if (loading) {
         return <SpinnerMain></SpinnerMain>
@@ -29,7 +30,7 @@ const RequireAuth = ({ children }) => {
                 className='btn btn-secondary'
                 onClick={async () => {
                     await sendEmailVerification();
-                    toast('Sent email');
+                    toast('Email Sent! Please Check Your Mailbox');
                 }}
             >
                 Send Verification Email

@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import SpinnerMain from '../../Shared/SpinnerMain/SpinnerMain';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -19,7 +20,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
 
 
     if (loading) {
@@ -33,6 +34,7 @@ const Register = () => {
 
         createUserWithEmailAndPassword(email, password);
         navigate('/home')
+
 
     }
 
@@ -60,6 +62,7 @@ const Register = () => {
                 </div>
                 <SocialLogin></SocialLogin>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

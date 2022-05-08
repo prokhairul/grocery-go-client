@@ -39,7 +39,7 @@ const Login = () => {
 
 
     if (user) {
-        navigate('/home')
+        navigate('/myitem')
     }
 
     const resetPassword = async () => {
