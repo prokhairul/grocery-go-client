@@ -19,24 +19,24 @@ const Inventory = () => {
 
         <div className='container'>
 
-            <h2>Product Details : </h2>
+            <h2 className='single-product-title'>Product Details : </h2>
 
-            <div className='d-flex'>
-                <div>
+            <div className='single-product'>
+                <div className='single-img'>
                     <img src={product.img} alt="" />
                 </div>
-                <div>
-                    <h4>Product ID: {product._id}</h4>
-                    <h2>Product name : {product.name}</h2>
-                    <h4>Supplier: {product.supplier}</h4>
-                    <p>Product Description: {product.description}</p>
-                    <h4>Price: {product.price} TK</h4>
-                    <h4>Quantity: {product.quantity}</h4>
+                <div className='product-detail'>
+                    <h2> <strong> Product name :</strong>  {product.name}</h2>
+                    <h4> <strong>Product ID:</strong>  {product._id}</h4>
+                    <h4> <strong>Supplier:</strong>  {product.supplier}</h4>
+                    <p> <strong>Product Description:</strong>  {product.description}</p>
+                    <h4> <strong>Price:</strong> {product.price} TK</h4>
+                    <h4> <strong>Quantity:</strong> {product.quantity} Piece</h4>
                     <button className='btn btn-success'>Deliver</button>
 
                     <div className='update-stock'>
                         <input type="text" name='Input' required placeholder='Update Your Quantity' />
-                        <button className='btn btn-danger'>Out Of Stock </button>
+                        <button className='btn btn-danger stock-out'>Out Of Stock </button>
                         <button className='btn btn-primary'>Restock</button>
                     </div>
 
