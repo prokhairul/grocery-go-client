@@ -5,15 +5,6 @@
     margin: 30px 0px 50px 0px;
 }
 
-/* Responsive Layout for Mobile Devices */
-
-@media only screen and (max-width:576px) {
-    .testimonials {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-
 .tesi-content {
     background-color: #f8f9fa;
     padding: 30px 30px 20px 30px;
@@ -46,6 +37,14 @@
 .testimonial-title {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     color: #080808;
+}
+
+/* Responsive Layout for Mobile Devices */
+
+@media only screen and (max-width:576px) {
+    .testimonials {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

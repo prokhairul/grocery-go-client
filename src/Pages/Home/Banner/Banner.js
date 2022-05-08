@@ -2,9 +2,9 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
 import img1 from '../../../images/1.png'
-import img2 from '../../../images/2.png'
 
 const Banner = () => {
+
     return (
         <div className='slider'>
             <Carousel variant="dark">
