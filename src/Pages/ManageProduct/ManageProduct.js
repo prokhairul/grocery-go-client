@@ -4,6 +4,7 @@ import Manage from '../ManageProduct/Manage'
 import './Manage.css'
 
 const ManageProduct = () => {
+
     const [products] = useProducts();
 
     return (

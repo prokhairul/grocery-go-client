@@ -1,5 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './AddProduct.css'
 
 const AddProduct = () => {
@@ -15,12 +17,8 @@ const AddProduct = () => {
             body: JSON.stringify(data)
         })
             .then(res => res.json())
-            .then(result => { })
-
-
-
+            .then(result => toast('Your Product Added Successfully'))
     };
-
 
     return (
 
@@ -38,11 +36,8 @@ const AddProduct = () => {
                     <input type="submit" value="Add Product" />
                 </form>
             </div>
-
-
+            <ToastContainer></ToastContainer>
         </div>
-
-
     );
 };
 
