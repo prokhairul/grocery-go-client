@@ -53,6 +53,10 @@ const Login = () => {
         }
     }
 
+    const navigateRegister = () => {
+        navigate('/register')
+    }
+
     return (
         <div className='container login-main'>
             <div className='login-form'>
@@ -68,6 +72,7 @@ const Login = () => {
                 </Form>
                 <div className='reset-section'>
                     <p>Forget Your Password? <button onClick={resetPassword} className='btn btn-link text-primary pe-auto text-decoration-none' >Reset Password</button> </p>
+                    <p>New to Grocery Go? <button onClick={navigateRegister} className='btn btn-link text-primary pe-auto text-decoration-none' >Register Now</button> </p>
                     <SocialLogin></SocialLogin>
                 </div>
             </div>

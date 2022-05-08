@@ -1,0 +1,30 @@
+.manage-products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.list-group-item {
+    margin: 5px;
+    width: 200px;
+}
+
+.list-group-item .btn {
+    padding: 0px 10px 0px 10px;
+}
+
+.manage-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #080808;
+    margin: 50px 0px 30px 0px;
+}
+
+
+/* Responsive Design  */
+
+@media only screen and (max-width: 576px) {
+    .manage-products {
+        overflow: scroll;
+    }
+}
