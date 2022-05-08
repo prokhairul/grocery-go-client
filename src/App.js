@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Header from './Pages/Shared/Header/Header'
@@ -16,13 +17,13 @@ import MyItem from './Pages/MyItem/MyItem'
 
 
 function App() {
+
   return (
     <div className='App'>
 
       <Header></Header>
 
       <Routes>
-
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
@@ -39,9 +40,8 @@ function App() {
         <Route path='/manageinventory' element={<ManageProduct></ManageProduct>}> </Route>
         <Route path='/myitem' element={<MyItem></MyItem>}></Route>
 
-
-
       </Routes>
+
 
       <Footer></Footer>
 

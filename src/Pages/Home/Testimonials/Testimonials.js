@@ -14,11 +14,11 @@ const Testimonials = () => {
                     <img src={IMG1} alt="" />
                     <h1>Khairul Islam</h1>
                     <h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
                     </h2>
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo earum error odio excepturi expedita officiis a rem minus quas dolore. </p>
                 </div>
@@ -26,11 +26,11 @@ const Testimonials = () => {
                     <img src={IMG2} alt="" />
                     <h1>Proloy Biswas</h1>
                     <h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <i class="fa fa-star-half" ></i>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <i className="fa fa-star-half" ></i>
                     </h2>
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo earum error odio excepturi expedita officiis a rem minus quas dolore. </p>
                 </div>
@@ -38,11 +38,11 @@ const Testimonials = () => {
                     <img src={IMG3} alt="" />
                     <h1>Masud Hasan</h1>
                     <h2>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
+                        <span className="fa fa-star checked"></span>
                     </h2>
                     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo earum error odio excepturi expedita officiis a rem minus quas dolore. </p>
                 </div>

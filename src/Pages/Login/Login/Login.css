@@ -1,0 +1,17 @@
+.login-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #080808;
+}
+
+.login-main {
+    margin-top: 50px;
+}
+
+.reset-section {
+    margin-top: 30px;
+}
