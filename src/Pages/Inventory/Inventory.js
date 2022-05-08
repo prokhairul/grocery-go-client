@@ -7,7 +7,7 @@ const Inventory = () => {
     const [product, setProducts] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://boiling-tundra-92423.herokuapp.com/product/${id}`;
 
         fetch(url)
             .then(res => res.json())

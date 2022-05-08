@@ -11,7 +11,7 @@ const Manage = ({ product }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://boiling-tundra-92423.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
 

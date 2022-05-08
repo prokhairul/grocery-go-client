@@ -8,7 +8,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        const url = `http://localhost:5000/product`;
+        const url = `https://boiling-tundra-92423.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -13,7 +13,7 @@ const MyItem = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/items?email=${email}`;
+            const url = `https://boiling-tundra-92423.herokuapp.com/items?email=${email}`;
             const { data } = await axios.get(url);
             setItems(data);
         }
