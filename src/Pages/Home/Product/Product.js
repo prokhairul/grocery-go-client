@@ -14,17 +14,16 @@ const Product = ({ product }) => {
 
     return (
         <div className='product'>
-
-            <Card style={{ width: '23rem' }}>
+            <Card>
                 <Card.Img className='w-75' variant="top" src={img} alt="" />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <Card.Title> Quantity: {quantity} </Card.Title>
-                    <Card.Text> Suplier: {supplier} </Card.Text>
+                    <Card.Text className='mb-1'> <strong>Quantity : {quantity} </strong> Piece  </Card.Text>
+                    <Card.Text> <strong>Suplier : {supplier}</strong>  </Card.Text>
                     <Card.Text>{description} </Card.Text>
-                    <Card.Header>Price: {price} TK</Card.Header>
+                    <Card.Text> <strong>Price: {price} ৳</strong> </Card.Text>
                     <div className='mt-3'>
-                        <Button onClick={() => navigateToInventory(_id)} variant="primary">Update Stock</Button>
+                        <Button onClick={() => navigateToInventory(_id)} variant="secondary">Update Stock</Button>
                     </div>
 
                 </Card.Body>
