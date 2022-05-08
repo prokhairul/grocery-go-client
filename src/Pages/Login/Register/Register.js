@@ -1,10 +1,25 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import './Register.css'
 
 const Register = () => {
+
+    const [
+        createUserWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useCreateUserWithEmailAndPassword(auth);
+
+    const navigate = useNavigate();
+    const navigateLogin = () => {
+        navigate('/login')
+    }
+
     return (
         <div className='container login-main'>
             <div className='login-form'>
@@ -20,7 +35,7 @@ const Register = () => {
                     <Button variant="secondary w-25 d-block mb-2" type="submit"> Submit</Button>
                 </Form>
                 <div className='reset-section'>
-                    <p>Already Register? <Link to="/login">Login</Link> </p>
+                    <p>Already Register? <Link to="/login" onClick={navigateLogin}>Login</Link> </p>
                 </div>
                 <SocialLogin></SocialLogin>
             </div>

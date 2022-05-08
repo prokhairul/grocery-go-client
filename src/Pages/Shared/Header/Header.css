@@ -7,6 +7,11 @@
     border-bottom: 2px solid #f2f3f4;
 }
 
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 992px) {
     .navbar-light .navbar-nav .nav-link {
         text-transform: uppercase;
