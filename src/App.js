@@ -33,12 +33,30 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
 
         <Route path='/inventory/:id' element={
-          <Inventory></Inventory>
+          <RequireAuth>
+            <Inventory></Inventory>
+          </RequireAuth>
         }></Route>
 
-        <Route path='/add' element={<AddProduct></AddProduct>}></Route>
-        <Route path='/manageinventory' element={<ManageProduct></ManageProduct>}> </Route>
-        <Route path='/myitem' element={<MyItem></MyItem>}></Route>
+        <Route path='/add' element={
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+        }></Route>
+
+        <Route path='/manageinventory' element={
+          <RequireAuth>
+            <ManageProduct></ManageProduct>
+          </RequireAuth>
+        }> </Route>
+
+        <Route path='/myitem' element={
+          <RequireAuth>
+            <MyItem></MyItem>
+          </RequireAuth>
+        }></Route>
+
+
 
       </Routes>
 
