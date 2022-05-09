@@ -18,7 +18,7 @@ const Product = ({ product }) => {
                 <Card.Img className='w-75' variant="top" src={img} alt="" />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
-                    <Card.Text className='mb-1'> <strong>Quantity : {quantity} </strong> Piece  </Card.Text>
+                    <Card.Text className='mb-1'> <strong>Quantity : {quantity} </strong></Card.Text>
                     <Card.Text> <strong>Suplier : {supplier}</strong>  </Card.Text>
                     <Card.Text>{description} </Card.Text>
                     <Card.Text> <strong>Price: {price} ৳</strong> </Card.Text>

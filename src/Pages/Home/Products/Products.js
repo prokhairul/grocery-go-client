@@ -11,7 +11,7 @@ const Products = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch('https://boiling-tundra-92423.herokuapp.com/product')
+        fetch('http://localhost:5000/product')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

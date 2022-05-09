@@ -4,23 +4,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Manage.css'
 
-const Manage = ({ product }) => {
-
+const Manage = ({ product, handleDelete }) => {
     const { _id, name, price, quantity, supplier } = product;
-
-    const handleDelete = id => {
-        const proceed = window.confirm('Are you sure to delete?')
-        if (proceed) {
-            const url = `https://boiling-tundra-92423.herokuapp.com/product/${id}`;
-            fetch(url, {
-                method: 'DELETE'
-
-            })
-                .then(res => res.json())
-                .then(data => toast('Product Deleted! Please Reload this Page :('));
-        }
-    }
-
     return (
         <div className='manage-products'>
             <div>
@@ -41,7 +26,7 @@ const Manage = ({ product }) => {
             </div>
             <div>
                 <ListGroup>
-                    <ListGroup.Item>{quantity} Piece</ListGroup.Item>
+                    <ListGroup.Item>{quantity}</ListGroup.Item>
                 </ListGroup>
             </div>
             <div>
@@ -49,7 +34,6 @@ const Manage = ({ product }) => {
                     <ListGroup.Item> <button onClick={() => handleDelete(_id)} className='btn btn-secondary'>Delete</button></ListGroup.Item>
                 </ListGroup>
             </div>
-            <ToastContainer></ToastContainer>
         </div>
     );
 };

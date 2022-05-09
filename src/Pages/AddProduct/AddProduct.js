@@ -8,7 +8,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
 
-        const url = `https://boiling-tundra-92423.herokuapp.com/product`;
+        const url = `http://localhost:5000/product`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -31,7 +31,7 @@ const AddProduct = () => {
                     <input className='mb-3' placeholder='Supplier' {...register("supplier")} />
                     <textarea className='mb-3' placeholder='Product Description' {...register("description")} />
                     <input className='mb-3' placeholder='Price' type="number" {...register("price",)} />
-                    <input className='mb-3' placeholder='Quantity' type="number" {...register("quantity")} />
+                    <input className='mb-3' placeholder='Quantity' type="text" {...register("quantity")} />
                     <input className='mb-3' placeholder='Photo URL' {...register("img")} />
                     <input type="submit" value="Add Product" />
                 </form>
