@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Login.css'
 import { Button, Form } from 'react-bootstrap';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from '../../../firebase.init';
 import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
@@ -14,9 +14,6 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
-    const location = useLocation();
-
-    const letfrom = location.state.from || "/";
 
     const [
         signInWithEmailAndPassword,
@@ -26,6 +23,8 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
+    let errorShow;
 
     if (loading || sending) {
         return <SpinnerMain></SpinnerMain>
@@ -39,8 +38,12 @@ const Login = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+    if (error) {
+        errorShow = <strong className='text-danger'>Error: {error.message}</strong>
+    }
+
     if (user) {
-        navigate(letfrom, { replace: true });
+        navigate('/home');
     }
 
     const resetPassword = async () => {
@@ -71,6 +74,8 @@ const Login = () => {
                     </Form.Group>
                     <Button variant="secondary w-25 d-block mb-2" type="submit"> Login!</Button>
                 </Form>
+
+                {errorShow}
                 <div className='reset-section'>
                     <p>Forget Your Password? <button onClick={resetPassword} className='btn btn-link text-primary pe-auto text-decoration-none' >Reset Password</button> </p>
                     <p>New to Grocery Go? <button onClick={navigateRegister} className='btn btn-link text-primary pe-auto text-decoration-none' >Register Now</button> </p>
