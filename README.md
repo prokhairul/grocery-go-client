@@ -6,7 +6,7 @@ Check Our Live Site:  [Grocery Go](https://github.com/facebook/create-react-app)
 
 Grocery Go has undoubtedly the largest selection of imported and international products catering to the many ethnic and cultural backgrounds within its respective communities.
 
-### Important Implementation 
+## Important Implementation 
 
 
 * Mongodb for product database 
@@ -15,7 +15,7 @@ Grocery Go has undoubtedly the largest selection of imported and international p
 * React bootstrap for design 
 
 
-### A few features of this website
+## A few features of this website
 
 * Fully responsive design for both mobile and desktop version
 * User Login / Register options using email and password. Also google login implemented
