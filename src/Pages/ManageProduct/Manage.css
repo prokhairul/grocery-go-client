@@ -5,7 +5,7 @@
 
 .list-group-item {
     margin: 5px;
-    width: 200px;
+    width: 250px;
 }
 
 .list-group-item .btn {
@@ -28,10 +28,19 @@
     margin-right: 50px;
 }
 
+.table-head {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 /* Responsive Design  */
 
 @media only screen and (max-width: 576px) {
     .manage-products {
+        overflow: scroll;
+    }
+
+    .table-head {
         overflow: scroll;
     }
 

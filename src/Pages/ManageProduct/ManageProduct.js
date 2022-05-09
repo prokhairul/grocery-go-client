@@ -1,4 +1,5 @@
 import React from 'react';
+import { ListGroup } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import useProducts from '../../hooks/useProducts'
@@ -35,6 +36,35 @@ const ManageProduct = () => {
     return (
         <div className='container'>
             <h2 className='manage-title' >Manage Your Product </h2>
+
+            <div className='table-head'>
+                <div>
+                    <ListGroup as="ul" >
+                        <ListGroup.Item as="li" active>name </ListGroup.Item>
+                    </ListGroup>
+                </div>
+                <div>
+                    <ListGroup as="ul">
+                        <ListGroup.Item as="li" active>Price </ListGroup.Item>
+                    </ListGroup>
+                </div>
+                <div>
+                    <ListGroup as="ul">
+                        <ListGroup.Item as="li" active>Suplier </ListGroup.Item>
+                    </ListGroup>
+                </div>
+                <div>
+                    <ListGroup as="ul">
+                        <ListGroup.Item as="li" active>Quantity </ListGroup.Item>
+                    </ListGroup>
+                </div>
+                <div>
+                    <ListGroup as="ul">
+                        <ListGroup.Item as="li" active> Remove </ListGroup.Item>
+                    </ListGroup>
+                </div>
+            </div >
+
             {
                 products.map(product => <Manage
                     key={product._id}
@@ -42,12 +72,12 @@ const ManageProduct = () => {
                     handleDelete={handleDelete}
                 ></Manage>)
             }
-            <div className='manage-product-btn'>
+            < div className='manage-product-btn' >
                 <button onClick={handleNavigate} className='btn btn btn-success'>Add New Products</button>
-            </div>
+            </div >
             <ToastContainer
             ></ToastContainer>
-        </div>
+        </div >
     );
 };
 

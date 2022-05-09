@@ -5,3 +5,20 @@
     color: #080808;
     margin-bottom: 30px;
 }
+
+.add-product {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* d-flex flex-column w-50 m-auto */
+
+/* responsive Fixed  */
+
+@media only screen and (max-width: 576px) {
+    .add-product {
+        width: 90%;
+    }
+}

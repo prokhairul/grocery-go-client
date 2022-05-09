@@ -6,8 +6,8 @@ import './AddProduct.css'
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
 
+    const onSubmit = data => {
         const url = `http://localhost:5000/product`;
         fetch(url, {
             method: 'POST',
@@ -26,7 +26,7 @@ const AddProduct = () => {
 
             <h2 className='text-center mt-5 mb-5 add-new-title'>Add a new Product </h2>
             <div className='form-field'>
-                <form className='d-flex flex-column w-50 m-auto' onSubmit={handleSubmit(onSubmit)}>
+                <form className='add-product' onSubmit={handleSubmit(onSubmit)}>
                     <input className='mb-3' placeholder='Product Name' {...register("name", { required: true, maxLength: 100 })} />
                     <input className='mb-3' placeholder='Supplier' {...register("supplier")} />
                     <textarea className='mb-3' placeholder='Product Description' {...register("description")} />
