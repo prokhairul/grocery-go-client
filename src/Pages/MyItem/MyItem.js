@@ -15,7 +15,7 @@ const MyItem = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user.email;
-            const url = `http://localhost:5000/items?email=${email}`;
+            const url = `https://boiling-tundra-92423.herokuapp.com/items?email=${email}`;
             const { data } = await axios.get(url);
             setItems(data);
         }
@@ -25,7 +25,7 @@ const MyItem = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://boiling-tundra-92423.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -5,10 +5,19 @@ import 'react-toastify/dist/ReactToastify.css';
 import './AddProduct.css'
 
 const AddProduct = () => {
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm({
+        defaultValues: {
+            name: "",
+            supplier: "",
+            Description: "",
+            price: "",
+            quantity: "",
+            img: ""
+        }
+    });
 
     const onSubmit = data => {
-        const url = `http://localhost:5000/product`;
+        const url = `https://boiling-tundra-92423.herokuapp.com/product`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -34,6 +43,13 @@ const AddProduct = () => {
                     <input className='mb-3' placeholder='Quantity' type="text" {...register("quantity")} />
                     <input className='mb-3' placeholder='Photo URL' {...register("img")} />
                     <input type="submit" value="Add Product" />
+                    <br />
+                    <input type="submit" value="Reset Form"
+
+                        onClick={() => {
+                            reset()
+                        }}
+                    ></input>
                 </form>
             </div>
             <ToastContainer></ToastContainer>

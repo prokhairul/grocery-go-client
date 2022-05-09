@@ -51,11 +51,11 @@ input {
     display: none;
 }
 
-
 @media only screen and (max-width:576px) {
     .single-product {
         display: flex;
         flex-direction: column;
+        margin-bottom: 50px;
     }
 
     .single-product img {
